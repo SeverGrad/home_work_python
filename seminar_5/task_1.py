@@ -5,11 +5,12 @@
 # A = 2; B = 3 -> 8
 
 
+def degree(a, b):
+    if b == 1:
+        return a
+    elif b != 1:
+        return a * degree(a, b - 1)
+
 a = int(input('Введите число a: '))  
-b = int(input('Введите число b: '))  
-i = 1
-c = a 
-while i < b:
-    a = a * c
-    i += 1
-print(a)
+b = int(input('Введите число b: ')) 
+print(f'Резальтута возвденеия в степень {degree(a, b)}')
