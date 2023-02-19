@@ -10,16 +10,16 @@
 # Вывод: [1, 9, 13, 14, 19]
 
 from random import randint
-a  = []
-d = []
+randon_lst  = []
+index_lst = []
 for i in range(1, 20):
-    a.append(randint(-20, 20))
-print(a)
+    randon_lst.append(randint(-20, 20))
+print(randon_lst)
 
-b = int(input('Введите минимум: '))
-c = int(input('Введите максимум: '))
+min_number = int(input('Введите минимум: '))
+max_number = int(input('Введите максимум: '))
 
-for i in range(len(a)):
-    if c >= a[i] and b <= a[i]:
-        d.append(i)
-print(d)
+for i in range(len(randon_lst)):
+    if max_number >= randon_lst[i] and min_number <= randon_lst[i]:
+        index_lst.append(i)
+print(index_lst)
